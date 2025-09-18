@@ -71,6 +71,14 @@ so you can verify tables (User, WorkOrder, etc.)
 <img width="1910" height="981" alt="Screenshot 2025-09-18 033835" src="https://github.com/user-attachments/assets/81b7f4c9-6019-4ea7-aea8-358d2379279b" />
 <img width="1888" height="1002" alt="Screenshot 2025-09-18 033924" src="https://github.com/user-attachments/assets/816db409-b121-464e-abe4-40e44ac32405" />
 
+# Login access:
+User access:
+email : user@example.com
+password: Password123!
+
+Manager access to all:
+email : manager@example.com
+password: Password123!
 
 # User login:
 <img width="1906" height="1006" alt="Screenshot 2025-09-18 034326" src="https://github.com/user-attachments/assets/17c67ba5-c1b1-498c-8cb2-1841b3fabfe3" />
