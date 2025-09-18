@@ -163,6 +163,9 @@ if (priorityFilter) where.priority = priorityFilter;
   http://localhost:3000/orders/new → Create order
   http://localhost:3000/orders/id → Edit order
 
+# Project architecture: 
+<img width="1366" height="728" alt="projectarchitecture" src="https://github.com/user-attachments/assets/7fec8ad2-578c-4e5e-ab8e-311a1c1e4798" />
+
 # Core Features:
 
 1. Orders List – Paginated list of work orders with text search, filters (status, priority), and role-based scoping.
@@ -171,6 +174,21 @@ if (priorityFilter) where.priority = priorityFilter;
 4. Role-based Access –
   User → Can only see their own orders.
   Manager → Can see all orders.
+
+# Docker Build:
+```
+docker build -t workorders-app .
+```
+
+# Docker Run:
+```
+docker run -p 3000:3000 \
+  -e DATABASE_URL="file:./prisma/dev.db" \
+  -e NEXTAUTH_URL="http://localhost:3000" \
+  -e NEXTAUTH_SECRET="aXJ0z3k9pQ7mW8vL2nB4fY6hT1rK5jN8xC0wM2qP9s=" \
+  workorders-app
+```
+<img width="1888" height="982" alt="Screenshot 2025-09-18 105448" src="https://github.com/user-attachments/assets/3d7fc2d6-a1bc-4760-b85b-90e662041901" />
 
 ## Author  
 **Neha Jagtap**
